@@ -1,4 +1,4 @@
-confsmkdir -p data
+mkdir -p data
 cd data
 echo "Downloading the DTU dataset ..."
 wget https://www.dropbox.com/s/s6psnh1q91m4kgo/DTU.zip

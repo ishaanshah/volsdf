@@ -13,7 +13,9 @@ class SceneDataset(torch.utils.data.Dataset):
                  scan_id=0,
                  ):
 
-        self.instance_dir = os.path.join('../data', data_dir, 'scan{0}'.format(scan_id))
+        # self.instance_dir = os.path.join('/ssd_scratch/cvit/ishaan/volsdf_data', data_dir, 'scan{0}'.format(scan_id))
+        # self.instance_dir = os.path.join('/home2', 'ishaanshah', 'openpose', 'hands_maximo')
+        self.instance_dir = os.path.join('/ssd_scratch/cvit/ishaan/volsdf_data/STIC/object3/handaction3')
 
         self.total_pixels = img_res[0] * img_res[1]
         self.img_res = img_res
